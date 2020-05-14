@@ -13,3 +13,18 @@ $()
 
 **DOM Traversal**
 
+parent element - $('.child').parent()';
+first-level/children - '$('.parent').children()';
+second-level/grandchildren -  '$('.parent').children().children()';
+
+**DOM Manipuation**
+
+.addClass
+
+**Getters and Setters**
+
+## setters
+.val()
+.text()
+.data()
+.attr()
