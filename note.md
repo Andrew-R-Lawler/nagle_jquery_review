@@ -23,8 +23,11 @@ second-level/grandchildren -  '$('.parent').children().children()';
 
 **Getters and Setters**
 
-## setters
 .val()
 .text()
 .data()
 .attr()
+
+**Descendent Selector**
+
+**$this**
