@@ -1,6 +1,6 @@
 // script load is first event code runs at
 console.log('hello world');
-
+let people = [];
 // page load is second event code runs at
 $('document').ready(onReady)
 
@@ -17,17 +17,27 @@ function onReady(){
 // $( '#button' ).on( 'click', function)
 
 function handleSubmit(){
+    let firstName = $('#firstName').val();
+    let lastName = $('#lastName').val();
+    let personObject = {
+        firstName: firstName,
+        lastName: lastName
+    }
     console.log('button clicked');
-    console.log($('#firstName').val());
+    
     $('#firstName').val('');
+    $('#lastName').val('');
+    console.log(firstName, lastName);
+    people.push(personObject);
+    console.log(personObject);
+    console.log(people);
+    
 
-    console.log(firstName);
-    $('#firstName').val('YAY!');
     // setter
-    $('.wrapper').append('<button class = "xtraBtn">click me</button>');
+    // $('.wrapper').append('<button class = "xtraBtn">click me</button>');
 }
 
 function handleClick(){
     console.log('click!');
-    $(this).remove();
+    $(this).toggleClass('blue');
 }

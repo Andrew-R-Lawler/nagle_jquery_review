@@ -31,3 +31,7 @@ second-level/grandchildren -  '$('.parent').children().children()';
 **Descendent Selector**
 
 **$this**
+
+**Inputs**
+**Appending To The DOM**
+**Lists**
